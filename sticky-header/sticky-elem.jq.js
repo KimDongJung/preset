@@ -3,8 +3,8 @@ function stickyElem(elem) {
   var docElem = $('html, body');
   var docElemScrTop;
   var stickyElem = elem;
-  var stickyElemffset = elem.offset().top;
-  var stickyElemOuterHeight = elem.outerHeight();
+  var stickyElemffset = stickyElem.offset().top;
+  var stickyElemOuterHeight = stickyElem.outerHeight();
   win.on('scroll', function(){
     docElemScrTop = docElem.scrollTop();
     if(docElemScrTop >= stickyElemOffset) {
